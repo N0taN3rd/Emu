@@ -1,0 +1,31 @@
+{
+  "name": "Emu",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "John Berlin <n0tan3rd@gmail.com>",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "@babel/generator": "^7.0.0-beta.44",
+    "@babel/template": "^7.0.0-beta.44",
+    "@babel/types": "^7.0.0-beta.44",
+    "fs-extra": "^5.0.0",
+    "lodash": "^4.17.5",
+    "webidl2": "^10.3.1"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^5.0.1",
+    "prettier-standard": "^8.0.1",
+    "snazzy": "^7.1.1",
+    "standard": "^11.0.1"
+  },
+  "scripts": {
+    "format": "prettier-standard 'lib/**/*.js'",
+    "lint": "standard --verbose | snazzy",
+    "lint-fix": "standard --fix"
+  },
+  "standard": {
+    "ignore": [
+      "idls"
+    ]
+  }
+}
