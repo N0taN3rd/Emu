@@ -43,7 +43,7 @@ program
   .command('generate <idls>')
   .option(
     '-d, --dump',
-    'Dumps the found interfaces in a file called "identified.json" where'
+    'Dumps the found interfaces in a file called "identified.json" in the current working'
   )
   .option('-n, --name', 'The name of the generated client-side rewriter')
   .description(
